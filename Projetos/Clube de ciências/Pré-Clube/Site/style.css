@@ -1,0 +1,264 @@
+*{
+    margin: 0 auto ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+#navbar nav ul li a{
+    color: #ffffff;
+    padding: 20px;
+    display: inline;
+    text-decoration: none;
+    transition: background .6s;
+}
+
+#navbar nav ul li a:hover{
+    background-color: rgb(41, 118, 235);
+}
+
+  /* #navbar ul{
+    list-style: none;
+    background-color: rgb(16, 56, 115);
+    padding: 20px;
+
+}
+
+#navbar ul li{
+
+    display: inline;
+
+} */
+
+
+
+@font-face {
+    font-family: 'fontee';
+    src: url(/fontes/Quicksand-VariableFont_wght.ttf);
+}
+
+.menu {
+
+    /* /* ALTERAR CONFIG DENTRO DA NAVBAR E TAMANHO DA NAVBAR/ */
+    /* padding-top: 15px; */
+    width: 100%;
+    height: 10vh;
+    background: #002a68;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 1px 3px 10px rgb(0, 0, 0);
+    position: fixed;
+    z-index: 1;
+
+}
+.menu--nav {
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo {
+    /* / position: relative; / */
+    max-width: 150px;
+}
+
+header .navbar ul {
+    /* / position: relative; / */
+    display: flex;
+
+    ;
+}
+
+.navbar li a {
+    /* CONFIG DOS LINKS */ 
+    color: wite;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 23px;
+    margin-left: 100px;
+    font-family: 'fontee';
+    font-weight: 1000;
+ 
+}
+
+ul{
+    list-style: none;
+}
+
+     
+@font-face {
+    font-family: conteudo  ;
+    src: url(/fontes/static/Quicksand-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-size: normal;
+
+}
+
+@font-face {
+    font-family: subtítulo  ;
+    src: url(/fontes/static/Quicksand-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-size: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: whitesmoke;
+}
+
+
+:root {
+font-size: 16px; /* Defina o tamanho base da fonte */
+
+--cor__azul: #002a68;
+
+}
+
+body{
+
+width: 100%;
+background-image: url(/IMG/Pré-clube\ fundo.png);
+background-size: 100%;
+
+
+}
+
+
+/* seção titulo */
+
+.praia{
+width: 100vw;
+height: 140vh;
+
+}
+
+footer{
+    width: 100vw;
+    height: 130vh;
+    
+    }
+
+.praia > img{
+
+width: 35%;
+position: relative;
+left: 100px;
+top: 0;
+}
+
+@media screen and (max-width: 390px) {
+
+body{
+
+    background-image: url(/IMG/FundoMobile.png);
+    background-repeat: no-repeat;
+  
+}
+
+.praia{
+    height: 50vh;
+}
+
+.praia > img{
+
+    width: 60%;
+    left: 15px;
+   
+}
+    
+}
+
+
+
+
+
+
+/* seção conteudo */
+
+.caixa {
+width: 45%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+background-color: var(--cor__azul);
+padding: 2.5rem 0 2.5rem 0;
+margin-bottom: 60px;
+border-top-right-radius: 2.5rem;
+border-bottom-right-radius: 2.5rem;
+
+}
+
+.caixa > h1 {
+padding-bottom: 0.625rem;
+padding-left: 3.75rem;
+text-transform: uppercase;
+font-weight: 800;
+font-size: 2.5rem;
+color: #FFFFFF;
+font-family: 'Nunito';  
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.caixa > h2{
+
+font-family: subtítulo ;
+color: #ffffff;
+padding-bottom: 0.625rem;
+padding-left: 3.75rem;
+text-transform: uppercase;
+font-weight: 800;
+font-size: 2.5rem;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.caixaimg > img {
+width: 90%;
+}
+
+.caixa > p {
+
+color: #ffffff;
+max-width: 90%;
+padding: 0.625rem;
+text-align: start;
+font-size: 1rem;
+font-family: 'conteudo';
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.caixa > p > span {
+font-weight: 600;
+font-size: 1.125rem;
+}
+
+@media screen and (max-width: 390px) {
+
+.caixa {
+width: 80%;
+padding: 1.563rem 0 1.563rem 0;
+}
+
+.caixa > h1 {
+font-size: 1.875rem;
+padding-left: 1.875rem;
+}
+
+.caixa > h2{
+
+font-size: 1.875rem;
+padding-left: 1.875rem;
+}
+
+}
